@@ -10,8 +10,8 @@ Thanks for checking out this front-end coding challenge.
 
 This is a solution to the [Fylo data storage component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n).
 
-- Solution URL : []()
-- Live Site URL: [erenymo.github.io/fylo-data-storage-component/]()
+- Solution URL : [Click Here !](https://www.frontendmentor.io/solutions/responsive-fylo-data-storage-page-using-pure-html5-and-css3-_oHzJ1z_0T)
+- Live Site URL: [Click Here !](https://erenymo.github.io/fylo-data-storage-component/)
 
 
 ## Screenshots
