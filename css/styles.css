@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+/* Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%) */
+/*
+    - Pale Blue: hsl(243, 100%, 93%)
+    - Grayish Blue: hsl(229, 7%, 55%)
+    - Dark Blue: hsl(228, 56%, 26%)
+    - Very Dark Blue: hsl(229, 57%, 11%) 
+    */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url("../images/bg-desktop.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(229, 57%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+}
+
+footer {
+  bottom: 30px;
+  position: absolute;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--very-dark-blue);
+}
+
+.github {
+  transition: all 0.3s ease;
+}
+
+.github i{
+  margin-right: 4px;
+}
+
+.github:hover {
+  transform: translateY(-5px);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 2rem;
+}
+
+/* left box */
+.left-box {
+  background-color: hsl(228, 56%, 26%);
+  gap: 2rem;
+  padding: 2.5rem 8rem 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  border-top-right-radius: 6rem;
+}
+
+.options {
+  display: flex;
+  gap: 1rem;
+}
+
+.option-box {
+  padding: 0.6rem;
+  width: 3rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(229, 57%, 11%);
+  transition: all 0.3s ease;
+}
+
+.option-box:hover {
+  cursor: pointer;
+  background-color: hsla(229, 57%, 11%,0.5) ;
+  transform: translateY(-5px);
+}
+
+/* right box */
+.right-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  color: white;
+  padding: 2rem;
+  background-color: hsl(228, 56%, 26%);
+  height: 9.5rem;
+  width: 33rem;
+}
+
+.right-box .desc {
+  color: hsla(243, 100%, 93%,0.7);
+  font-size: 14px;
+}
+.right-box .desc b {
+  color: white;
+}
+
+
+
+.storage-info {
+  color: white;
+  font-weight: 200;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.message-bubble {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: black;
+}
+
+.message-bubble p {
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: hsl(229, 7%, 55%);
+  font-weight: bold;
+}
+
+.storage-left {
+  top: -40px;
+  position: absolute;
+  right: 2rem;
+  background-color: white;
+  border-radius: 0.8em;
+  padding: 0.8rem 1.2rem;
+}
+
+.storage-left::after {
+  content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -11.5px;
+	margin-bottom: -17px;
+}
+
+.status {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.indicator {
+  position: relative;
+  padding: 0.1rem;
+  width: 100%;
+  height: 1rem;
+  background-color: hsla(229, 57%, 11%, 0.6) ;
+  border-radius: 10px;
+}
+
+
+
+.used-storage-info {
+  position: relative;
+  margin-left: 0.05rem;
+  width: 75%;
+  height: 90%;
+  background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 10px;
+}
+
+.storage-used {
+  width: 50%;
+}
+
+.storage-limit {
+  width: 50%;
+  text-align: right;
+}
+
+.circle {
+  position: absolute;
+  top: 1px;
+  right: 1.5px;
+  background-color: white;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50px;
+}
+
+@media (max-width: 1020px) {
+  body {
+    background-image: url("../images/bg-mobile.png");
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 1rem 1rem;
+  }
+
+  .container {
+    margin-top: 7rem;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-box {
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+  }
+
+  .right-box {
+    width: 20rem;
+  }
+  .right-box .desc {
+    text-align: center;
+  }
+
+  .storage-left {
+    top: auto;
+    bottom: -35px;
+    right: 4.3rem;
+    position: absolute;
+    background-color: white;
+    border-radius: 0.8em;
+    padding: 0.8rem 1.2rem;
+  }
+  .storage-left::after {
+    border: 0px solid transparent;
+  }
+}
